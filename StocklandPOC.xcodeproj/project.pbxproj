@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E630978C1D031C7F0031C4B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E630978B1D031C7F0031C4B3 /* AppDelegate.swift */; };
+		E630978E1D031C7F0031C4B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E630978D1D031C7F0031C4B3 /* ViewController.swift */; };
+		E63097911D031C7F0031C4B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E630978F1D031C7F0031C4B3 /* Main.storyboard */; };
+		E63097941D031C7F0031C4B3 /* StocklandPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E63097921D031C7F0031C4B3 /* StocklandPOC.xcdatamodeld */; };
+		E63097961D031C7F0031C4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E63097951D031C7F0031C4B3 /* Assets.xcassets */; };
+		E63097991D031C7F0031C4B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63097971D031C7F0031C4B3 /* LaunchScreen.storyboard */; };
+		E63097A41D031C7F0031C4B3 /* StocklandPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63097A31D031C7F0031C4B3 /* StocklandPOCTests.swift */; };
+		E63097AF1D031C7F0031C4B3 /* StocklandPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63097AE1D031C7F0031C4B3 /* StocklandPOCUITests.swift */; };
+		E64BF4881D03DEDD00CD3AA3 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF4871D03DEDD00CD3AA3 /* Store.swift */; };
+		E64BF48B1D03E19700CD3AA3 /* FSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF48A1D03E19700CD3AA3 /* FSParser.swift */; };
+		E64BF48D1D03F4F400CD3AA3 /* FSPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF48C1D03F4F400CD3AA3 /* FSPMapViewController.swift */; };
+		E64BF4911D03FBC100CD3AA3 /* Placemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF4901D03FBC100CD3AA3 /* Placemark.swift */; };
+		E64BF4931D040E5D00CD3AA3 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF4921D040E5D00CD3AA3 /* ConnectionManager.swift */; };
+		E64BF4961D0410DC00CD3AA3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64BF4951D0410DC00CD3AA3 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E63097A01D031C7F0031C4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63097801D031C7F0031C4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E63097871D031C7F0031C4B3;
+			remoteInfo = StocklandPOC;
+		};
+		E63097AB1D031C7F0031C4B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E63097801D031C7F0031C4B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E63097871D031C7F0031C4B3;
+			remoteInfo = StocklandPOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E63097881D031C7F0031C4B3 /* StocklandPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocklandPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E630978B1D031C7F0031C4B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E630978D1D031C7F0031C4B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E63097901D031C7F0031C4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E63097931D031C7F0031C4B3 /* StocklandPOC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StocklandPOC.xcdatamodel; sourceTree = "<group>"; };
+		E63097951D031C7F0031C4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E63097981D031C7F0031C4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E630979A1D031C7F0031C4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E630979F1D031C7F0031C4B3 /* StocklandPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocklandPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63097A31D031C7F0031C4B3 /* StocklandPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocklandPOCTests.swift; sourceTree = "<group>"; };
+		E63097A51D031C7F0031C4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63097AA1D031C7F0031C4B3 /* StocklandPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocklandPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63097AE1D031C7F0031C4B3 /* StocklandPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocklandPOCUITests.swift; sourceTree = "<group>"; };
+		E63097B01D031C7F0031C4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64BF4871D03DEDD00CD3AA3 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E64BF48A1D03E19700CD3AA3 /* FSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSParser.swift; sourceTree = "<group>"; };
+		E64BF48C1D03F4F400CD3AA3 /* FSPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPMapViewController.swift; sourceTree = "<group>"; };
+		E64BF4901D03FBC100CD3AA3 /* Placemark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Placemark.swift; sourceTree = "<group>"; };
+		E64BF4921D040E5D00CD3AA3 /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		E64BF4951D0410DC00CD3AA3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E63097851D031C7F0031C4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E630979C1D031C7F0031C4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63097A71D031C7F0031C4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E630977F1D031C7F0031C4B3 = {
+			isa = PBXGroup;
+			children = (
+				E64BF4801D03CBEC00CD3AA3 /* Constants */,
+				E630978A1D031C7F0031C4B3 /* StocklandPOC */,
+				E63097A21D031C7F0031C4B3 /* StocklandPOCTests */,
+				E63097AD1D031C7F0031C4B3 /* StocklandPOCUITests */,
+				E63097891D031C7F0031C4B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E63097891D031C7F0031C4B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E63097881D031C7F0031C4B3 /* StocklandPOC.app */,
+				E630979F1D031C7F0031C4B3 /* StocklandPOCTests.xctest */,
+				E63097AA1D031C7F0031C4B3 /* StocklandPOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E630978A1D031C7F0031C4B3 /* StocklandPOC */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF4971D0417AB00CD3AA3 /* Views */,
+				E64BF4941D0410A800CD3AA3 /* Constants */,
+				E64BF4891D03E15D00CD3AA3 /* Parser */,
+				E64BF4821D03DC0500CD3AA3 /* DataModels */,
+				E63097BD1D0322D00031C4B3 /* Controllers */,
+				E63097BC1D0322C30031C4B3 /* ConnectionManager */,
+				E630978B1D031C7F0031C4B3 /* AppDelegate.swift */,
+				E630978F1D031C7F0031C4B3 /* Main.storyboard */,
+				E63097951D031C7F0031C4B3 /* Assets.xcassets */,
+				E63097971D031C7F0031C4B3 /* LaunchScreen.storyboard */,
+				E630979A1D031C7F0031C4B3 /* Info.plist */,
+				E63097921D031C7F0031C4B3 /* StocklandPOC.xcdatamodeld */,
+			);
+			path = StocklandPOC;
+			sourceTree = "<group>";
+		};
+		E63097A21D031C7F0031C4B3 /* StocklandPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				E63097A31D031C7F0031C4B3 /* StocklandPOCTests.swift */,
+				E63097A51D031C7F0031C4B3 /* Info.plist */,
+			);
+			path = StocklandPOCTests;
+			sourceTree = "<group>";
+		};
+		E63097AD1D031C7F0031C4B3 /* StocklandPOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E63097AE1D031C7F0031C4B3 /* StocklandPOCUITests.swift */,
+				E63097B01D031C7F0031C4B3 /* Info.plist */,
+			);
+			path = StocklandPOCUITests;
+			sourceTree = "<group>";
+		};
+		E63097BC1D0322C30031C4B3 /* ConnectionManager */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF4921D040E5D00CD3AA3 /* ConnectionManager.swift */,
+			);
+			name = ConnectionManager;
+			sourceTree = "<group>";
+		};
+		E63097BD1D0322D00031C4B3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E630978D1D031C7F0031C4B3 /* ViewController.swift */,
+				E64BF48C1D03F4F400CD3AA3 /* FSPMapViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E64BF4801D03CBEC00CD3AA3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		E64BF4821D03DC0500CD3AA3 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF4871D03DEDD00CD3AA3 /* Store.swift */,
+			);
+			name = DataModels;
+			sourceTree = "<group>";
+		};
+		E64BF4891D03E15D00CD3AA3 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF48A1D03E19700CD3AA3 /* FSParser.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		E64BF4941D0410A800CD3AA3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF4951D0410DC00CD3AA3 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		E64BF4971D0417AB00CD3AA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E64BF4901D03FBC100CD3AA3 /* Placemark.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E63097871D031C7F0031C4B3 /* StocklandPOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63097B31D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOC" */;
+			buildPhases = (
+				E63097841D031C7F0031C4B3 /* Sources */,
+				E63097851D031C7F0031C4B3 /* Frameworks */,
+				E63097861D031C7F0031C4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StocklandPOC;
+			productName = StocklandPOC;
+			productReference = E63097881D031C7F0031C4B3 /* StocklandPOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E630979E1D031C7F0031C4B3 /* StocklandPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63097B61D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOCTests" */;
+			buildPhases = (
+				E630979B1D031C7F0031C4B3 /* Sources */,
+				E630979C1D031C7F0031C4B3 /* Frameworks */,
+				E630979D1D031C7F0031C4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E63097A11D031C7F0031C4B3 /* PBXTargetDependency */,
+			);
+			name = StocklandPOCTests;
+			productName = StocklandPOCTests;
+			productReference = E630979F1D031C7F0031C4B3 /* StocklandPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E63097A91D031C7F0031C4B3 /* StocklandPOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E63097B91D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOCUITests" */;
+			buildPhases = (
+				E63097A61D031C7F0031C4B3 /* Sources */,
+				E63097A71D031C7F0031C4B3 /* Frameworks */,
+				E63097A81D031C7F0031C4B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E63097AC1D031C7F0031C4B3 /* PBXTargetDependency */,
+			);
+			name = StocklandPOCUITests;
+			productName = StocklandPOCUITests;
+			productReference = E63097AA1D031C7F0031C4B3 /* StocklandPOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E63097801D031C7F0031C4B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Suresh;
+				TargetAttributes = {
+					E63097871D031C7F0031C4B3 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					E630979E1D031C7F0031C4B3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E63097871D031C7F0031C4B3;
+					};
+					E63097A91D031C7F0031C4B3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = E63097871D031C7F0031C4B3;
+					};
+				};
+			};
+			buildConfigurationList = E63097831D031C7F0031C4B3 /* Build configuration list for PBXProject "StocklandPOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E630977F1D031C7F0031C4B3;
+			productRefGroup = E63097891D031C7F0031C4B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E63097871D031C7F0031C4B3 /* StocklandPOC */,
+				E630979E1D031C7F0031C4B3 /* StocklandPOCTests */,
+				E63097A91D031C7F0031C4B3 /* StocklandPOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E63097861D031C7F0031C4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63097991D031C7F0031C4B3 /* LaunchScreen.storyboard in Resources */,
+				E63097961D031C7F0031C4B3 /* Assets.xcassets in Resources */,
+				E63097911D031C7F0031C4B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E630979D1D031C7F0031C4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63097A81D031C7F0031C4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E63097841D031C7F0031C4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64BF48D1D03F4F400CD3AA3 /* FSPMapViewController.swift in Sources */,
+				E64BF4911D03FBC100CD3AA3 /* Placemark.swift in Sources */,
+				E630978E1D031C7F0031C4B3 /* ViewController.swift in Sources */,
+				E64BF4931D040E5D00CD3AA3 /* ConnectionManager.swift in Sources */,
+				E64BF4961D0410DC00CD3AA3 /* Constants.swift in Sources */,
+				E64BF4881D03DEDD00CD3AA3 /* Store.swift in Sources */,
+				E630978C1D031C7F0031C4B3 /* AppDelegate.swift in Sources */,
+				E63097941D031C7F0031C4B3 /* StocklandPOC.xcdatamodeld in Sources */,
+				E64BF48B1D03E19700CD3AA3 /* FSParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E630979B1D031C7F0031C4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63097A41D031C7F0031C4B3 /* StocklandPOCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E63097A61D031C7F0031C4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E63097AF1D031C7F0031C4B3 /* StocklandPOCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E63097A11D031C7F0031C4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E63097871D031C7F0031C4B3 /* StocklandPOC */;
+			targetProxy = E63097A01D031C7F0031C4B3 /* PBXContainerItemProxy */;
+		};
+		E63097AC1D031C7F0031C4B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E63097871D031C7F0031C4B3 /* StocklandPOC */;
+			targetProxy = E63097AB1D031C7F0031C4B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E630978F1D031C7F0031C4B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63097901D031C7F0031C4B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E63097971D031C7F0031C4B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E63097981D031C7F0031C4B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E63097B11D031C7F0031C4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E63097B21D031C7F0031C4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E63097B41D031C7F0031C4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StocklandPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E63097B51D031C7F0031C4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StocklandPOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E63097B71D031C7F0031C4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StocklandPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StocklandPOC.app/StocklandPOC";
+			};
+			name = Debug;
+		};
+		E63097B81D031C7F0031C4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StocklandPOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StocklandPOC.app/StocklandPOC";
+			};
+			name = Release;
+		};
+		E63097BA1D031C7F0031C4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StocklandPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StocklandPOC;
+			};
+			name = Debug;
+		};
+		E63097BB1D031C7F0031C4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StocklandPOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cts.StocklandPOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = StocklandPOC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E63097831D031C7F0031C4B3 /* Build configuration list for PBXProject "StocklandPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63097B11D031C7F0031C4B3 /* Debug */,
+				E63097B21D031C7F0031C4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63097B31D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63097B41D031C7F0031C4B3 /* Debug */,
+				E63097B51D031C7F0031C4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63097B61D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63097B71D031C7F0031C4B3 /* Debug */,
+				E63097B81D031C7F0031C4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E63097B91D031C7F0031C4B3 /* Build configuration list for PBXNativeTarget "StocklandPOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E63097BA1D031C7F0031C4B3 /* Debug */,
+				E63097BB1D031C7F0031C4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E63097921D031C7F0031C4B3 /* StocklandPOC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E63097931D031C7F0031C4B3 /* StocklandPOC.xcdatamodel */,
+			);
+			currentVersion = E63097931D031C7F0031C4B3 /* StocklandPOC.xcdatamodel */;
+			path = StocklandPOC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E63097801D031C7F0031C4B3 /* Project object */;
+}
